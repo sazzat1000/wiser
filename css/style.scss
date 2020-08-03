@@ -1,0 +1,722 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Abril Fatface", cursive;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========================= Common CSS Start ========================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Abril Fatface";
+  color: #234262;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none !important;
+  transition: 0.5s;
+}
+.btn {
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background: #234262;
+  padding: 13px 65px;
+  border: 1px solid #234262;
+  transition: 0.5s;
+}
+.btn:hover {
+  background: #fff;
+  color: #234262;
+  border-color: #234262;
+}
+.btn:focus {
+  box-shadow: none;
+}
+.btn-blue {
+  font-size: 16px;
+  padding: 18px 50px;
+  background: #1fc2d9;
+  color: #fff;
+  border: 1px solid transparent;
+}
+.btn-blue:hover {
+  background: #fff;
+  color: #1fc2d9;
+  border-color: #1fc2d9;
+}
+.btn-white {
+  font-size: 16px;
+  padding: 18px 50px;
+  background: #fff;
+  color: #234262;
+  border: 1px solid #234262;
+}
+.btn-white:hover {
+  background: #234262;
+  color: #fff;
+  border-color: #234262;
+}
+.btn-transparent {
+  font-size: 16px;
+  padding: 13px 50px;
+  background: transparent;
+  color: #1fc2d9;
+  border: 1px solid #1fc2d9;
+}
+.btn-transparent:hover {
+  background: #1fc2d9;
+  color: #fff;
+  border-color: #1fc2d9;
+}
+p {
+  margin-bottom: 0;
+}
+.section-intro {
+  text-align: center;
+  h2 {
+    font-size: 55px;
+    margin-bottom: 40px;
+  }
+  p {
+    font-size: 18px;
+    color: #7d84ab;
+    line-height: 1.8;
+  }
+}
+/* ========================= Common CSS End ========================== */
+
+/* ========================= Top Header Start ========================== */
+#top-header {
+  background: #232637;
+  color: #fff;
+  font-size: 14px;
+  padding-top: 10px;
+  .vertical-bar {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  .login {
+    float: right;
+    a {
+      color: #fff;
+    }
+    i {
+      margin-right: 5px;
+    }
+  }
+}
+/* ========================= Top Header End ========================== */
+
+/* ========================= Header Start ========================== */
+#header {
+  .logo {
+    img {
+      margin-top: 13px;
+    }
+  }
+  .menu {
+    ul {
+      float: right;
+      margin-top: 5px;
+      li {
+        display: inline-block;
+        a {
+          display: block;
+          padding: 20px 10px;
+          color: #32364a;
+          font-weight: 600;
+          font-size: 15px;
+        }
+        a.active,
+        a:hover {
+          color: #1fc2d9;
+        }
+      }
+    }
+  }
+  .apply {
+    margin-top: 10px;
+  }
+}
+
+/* Slick Nav Start */
+
+.slicknav_menu {
+  display: none;
+  background: #fff;
+  padding-bottom: 18px;
+}
+.slicknav_nav {
+  background: #fff;
+  float: right;
+  margin-top: 0;
+  padding: 0;
+  width: 95%;
+  padding: 0;
+  border-radius: 0px;
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 66px;
+  z-index: 9999 !important;
+}
+.slicknav_btn {
+  margin: 0 30px 6px;
+  background: transparent;
+}
+.slicknav_menu .slicknav_icon-bar {
+  height: 3px;
+  width: 30px;
+  margin: 7px 0;
+  background: #1fc2d9;
+}
+.slicknav_nav a {
+  color: #32364a;
+  font-size: 15px;
+  font-weight: 500;
+}
+.slicknav_nav a.active {
+  color: #1fc2d9;
+}
+.slicknav_nav a:hover {
+  background: transparent;
+  color: #1fc2d9;
+}
+/* Slick Nav End */
+
+.sticky-bar {
+  left: 0;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  z-index: 9999;
+  animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+  background: #fff;
+}
+/* ========================= Header End ========================== */
+
+/* ========================= Banner Start ========================== */
+#banner {
+  background: url(../img/banner/banner-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 200px 0;
+  .banner-content {
+    h1 {
+      font-size: 70px;
+      color: #234262;
+      margin-bottom: 50px;
+    }
+    .btn-white {
+      margin: 50px 0 0 15px;
+    }
+  }
+}
+/* ========================= Banner End ========================== */
+
+/* ========================= Features Start ========================== */
+#feature {
+  margin-top: -50px;
+  .single-feature {
+    border-radius: 5px;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    i {
+      font-size: 30px;
+      background: #fff;
+      color: #ebb830;
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+      text-align: center;
+      display: inline-block;
+      border-radius: 50%;
+    }
+    .feature-content {
+      padding-left: 20px;
+      color: #fff;
+      h3 {
+        font-family: "Poppins";
+        font-size: 28px;
+        color: #fff;
+      }
+      p {
+        margin-top: -7px;
+        font-size: 18px;
+      }
+    }
+  }
+  .scholarship {
+    background: #ebb830;
+  }
+  .lab {
+    background: #317bd6;
+    i {
+      color: #317bd6;
+    }
+    .flaticon-flask:before {
+      padding-left: 10px;
+    }
+  }
+  .library {
+    background: #1fc2d9;
+    i {
+      color: #1fc2d9;
+    }
+  }
+}
+/* ========================= Features End ========================== */
+
+/* ========================= Course Start ========================== */
+#course {
+  .col-md-3 {
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 55px;
+    color: #234262;
+    margin: 80px 0 40px;
+  }
+  .control {
+    margin-bottom: 30px;
+    .btn {
+      margin: 0 20px;
+    }
+  }
+  .course-image {
+    height: 250px;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  .course-details {
+    h3 {
+      font-size: 30px;
+      color: #234262;
+      margin: 10px 0 20px;
+    }
+    p {
+      font-size: 16px;
+      color: #7d84ab;
+      margin-bottom: 20px;
+      line-height: 27px;
+    }
+  }
+  .mixitup-control-active {
+    background: #1fc2d9;
+    color: #fff;
+  }
+}
+/* ========================= Course End ========================== */
+
+/* ========================= Latest Start ========================== */
+#latest {
+  position: relative;
+  color: #fff;
+  padding: 150px 0;
+  margin: 100px 0;
+  .latest-content {
+    .section-intro {
+      text-align: left;
+      h2 {
+        color: #fff;
+      }
+      p {
+        font-size: 17px;
+        line-height: 2;
+      }
+    }
+    .latest-course {
+      margin-top: 50px;
+      i {
+        display: inline-block;
+        font-size: 40px;
+        color: #1fc2d9;
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        text-align: center;
+        border-radius: 50%;
+        background: #fff;
+        margin-bottom: 30px;
+      }
+      h4 {
+        color: #fff;
+        font-size: 25px;
+        line-height: 1.6;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+#latest::before {
+  position: absolute;
+  background: url(../img/latest/latest-1.png);
+  left: 0;
+  content: "";
+  width: 60%;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+  background-size: cover;
+  background-position: center center;
+}
+#latest::after {
+  position: absolute;
+  background: #000;
+  left: 0;
+  content: "";
+  width: 60%;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgba(23, 47, 72, 0.871);
+}
+#latest .latest-content::before {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  top: 0;
+  bottom: 0;
+  content: "";
+  background: url(../img/latest/latest-2.png);
+  background-size: cover;
+  background-position: center center;
+}
+/* ========================= Latest End ========================== */
+
+/* ========================= Event Start ========================== */
+#event {
+  .event-container {
+    margin-top: 50px;
+    .single-event {
+      border: 1px solid #e0e0e0;
+      margin-bottom: 20px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      .date {
+        background: #317bd6;
+        text-align: center;
+        padding: 40px 0;
+        color: #fff;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        h4 {
+          font-size: 55px;
+          color: #fff;
+        }
+      }
+      .event-details {
+        padding-left: 30px;
+        h3 {
+          font-size: 30px;
+          margin-bottom: 15px;
+          a {
+            text-decoration: none;
+            color: #234262;
+          }
+        }
+        span {
+          font-size: 16px;
+          color: #7d84ab;
+          margin-right: 20px;
+          i {
+            font-size: 20px;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+    .second-event {
+      .date {
+        background: #ebb830;
+      }
+    }
+    .third-event {
+      .date {
+        background: #1fc2d9;
+      }
+    }
+  }
+}
+/* ========================= Event End ========================== */
+
+/* ========================= Admission Start ========================== */
+#admission {
+  position: relative;
+  padding: 120px 0;
+  margin: 90px 0;
+  .admission-content {
+    .admission-form {
+      h2 {
+        color: #fff;
+        font-size: 55px;
+        margin-bottom: 30px;
+      }
+      .input-element {
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid rgba(224, 224, 224, 0.404);
+        width: 100%;
+        padding: 20px 0;
+        margin-bottom: 20px;
+        color: #fff;
+      }
+      .input-element:focus {
+        outline: 0;
+      }
+      .input-element::placeholder {
+        font-size: 14px;
+        color: #e0e0e0;
+      }
+      textarea.input-element {
+        resize: none;
+        height: 130px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+#admission::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  background: url(../img/admission/admission-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#admission .admission-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  background: url(../img/admission/admission-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -2;
+}
+#admission .admission-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  background-color: rgba(23, 47, 72, 0.871);
+  background-size: cover;
+  z-index: -1;
+}
+/* ========================= Admission End ========================== */
+
+/* ========================= News Start ========================== */
+#news {
+  margin: 100px 0;
+  .news-container {
+    margin-top: 50px;
+    .single-news {
+      .news-image {
+        position: relative;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          transition: 0.5s;
+        }
+        span {
+          display: inline-block;
+          width: 30%;
+          color: #fff;
+          font-size: 14px;
+          text-align: center;
+          background: #ebb830;
+          border-radius: 2px;
+          padding: 10px 20px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
+      }
+      .news-content {
+        margin-top: 50px;
+        padding-right: 50px;
+        h3 {
+          font-size: 30px;
+          line-height: 1.4;
+          margin-bottom: 20px;
+          a {
+            color: #234262;
+          }
+        }
+        span {
+          color: #7d84ab;
+          font-size: 14px;
+        }
+        .vertical-bar {
+          margin: 0 10px;
+          font-size: 20px;
+          color: #317bd6;
+        }
+      }
+    }
+    .second-news {
+      .news-image {
+        span {
+          background: #317bd6;
+        }
+      }
+    }
+    .single-news:hover img {
+      transform: scale(1.1);
+    }
+  }
+}
+/* ========================= News End ========================== */
+
+/* ========================= Footer Start ========================== */
+#footer {
+  padding: 100px 0 40px;
+  background: #232637;
+  h4 {
+    font-size: 25px;
+    color: #fff;
+    font-family: "Poppins";
+    margin-bottom: 30px;
+  }
+  .top-footer {
+    form {
+      overflow: hidden;
+      margin-bottom: 20px;
+      input {
+        padding: 15px 20px;
+        width: 100%;
+        border: none;
+      }
+      input.email {
+        padding-right: 40px;
+      }
+      input.subscribe {
+        background: #ebb830;
+        color: #fff;
+        border: 1px solid #ebb830;
+        padding: 14px 0;
+        transition: 0.5s;
+      }
+      input.subscribe:hover {
+        background: transparent;
+        color: #ebb830;
+        border: 1px solid #ebb830;
+      }
+      .col-md-8,
+      .col-md-3 {
+        padding: 0;
+      }
+    }
+    .social-links {
+      i {
+        font-size: 20px;
+        color: #fff;
+        width: 52px;
+        height: 58px;
+        line-height: 55px;
+        text-align: center;
+        background: #4064ad;
+        margin-right: 10px;
+      }
+      .fa-twitter {
+        background: #1d9dec;
+      }
+      .fa-google-plus-g {
+        background: #e11d1b;
+      }
+      .fa-linkedin-in {
+        background: #0271ae;
+      }
+    }
+  }
+  .main-footer {
+    padding: 80px 0;
+    .single-footer {
+      padding: 20px 30px;
+      a {
+        display: block;
+        font-size: 16px;
+        color: #7a838b;
+        margin-bottom: 10px;
+        font-weight: 300;
+      }
+      a:hover {
+        color: #1d9dec;
+      }
+    }
+  }
+  .bottom-footer {
+    .container {
+      border-top: 1px solid #1d9dec;
+    }
+    p {
+      color: #7a838b;
+      margin-top: 30px;
+      font-size: 16px;
+      a {
+        color: #1d9dec;
+      }
+      a:hover {
+        color: #ebb830;
+      }
+    }
+  }
+}
+/* ========================= Footer End ========================== */
+
+/* ========================= Back To Top Start ========================== */
+.up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: #1d9dec;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+  border-radius: 50%;
+}
+.up:focus {
+  outline: 0;
+}
+/* ========================= Back To Top End ========================== */

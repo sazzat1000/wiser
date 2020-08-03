@@ -1,0 +1,173 @@
+@media (max-width: 991px) {
+  #feature {
+    .single-feature {
+      padding: 25px 8px;
+      .feature-content {
+        padding-left: 5px;
+        h3 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+  #course {
+    .control {
+      .btn {
+        margin: 0 5px;
+        padding: 12px 30px;
+      }
+    }
+    .course-image {
+      height: 150px;
+    }
+    .course-details {
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+  #event {
+    .event-container {
+      .single-event {
+        .date {
+          padding: 20px 0;
+        }
+        .event-details {
+          padding-left: 0;
+          h3 {
+            font-size: 22px;
+          }
+          span {
+            margin-right: 3px;
+          }
+        }
+      }
+    }
+  }
+  #news {
+    .news-container {
+      .single-news {
+        .news-image {
+          span {
+            width: 40%;
+          }
+        }
+        .news-content {
+          padding-right: 0;
+          h3 {
+            font-size: 23px;
+          }
+        }
+      }
+    }
+  }
+  #footer {
+    .top-footer {
+      .social-links {
+        i {
+          width: 40px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #top-header {
+    display: none;
+  }
+  #header {
+    display: none;
+  }
+  .slicknav_menu {
+    display: block;
+  }
+  #feature {
+    .single-feature {
+      padding: 25px 20px;
+      .feature-content {
+        padding-left: 20px;
+        h3 {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+  #course {
+    .control {
+      .btn {
+        margin: 0 5px;
+        padding: 12px 16px;
+      }
+    }
+    .course-image {
+      height: 150px;
+    }
+    .course-details {
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+  #latest::before {
+    width: 100%;
+  }
+  #latest::after {
+    width: 100%;
+  }
+  #latest .latest-content::before {
+    width: 0%;
+  }
+  #event {
+    .event-container {
+      .single-event {
+        .event-details {
+          h3 {
+            font-size: 19px;
+          }
+          span {
+            margin-right: 0;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  #admission::before {
+    width: 0;
+  }
+  #admission .admission-content::before {
+    width: 100%;
+  }
+  #admission .admission-content::after {
+    width: 100%;
+  }
+  #news {
+    .news-container {
+      .single-news {
+        .news-image {
+          span {
+            width: 60%;
+          }
+        }
+        .news-content {
+          padding-right: 0;
+          h3 {
+            font-size: 17px;
+          }
+          .vertical-bar {
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+  #footer {
+    .bottom-footer {
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
